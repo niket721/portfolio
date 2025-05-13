@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="simple_calc_style.css" />
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+  <div class="calculator">
+    <textarea class="display" readonly></textarea>
+
+    <div class="buttons">
+      <button class="clear" onclick="clearinput(this)">C</button>
+      <button class="single-clear" onclick="singleclear(this)">←</button>
+      <button class="divide" onclick="putting(this)">÷</button>
+      <button class="multiply" onclick="putting(this)">×</button>
+
+      <button class="seven" onclick="putting(this)">7</button>
+      <button class="eight" onclick="putting(this)">8</button>
+      <button class="nine" onclick="putting(this)">9</button>
+      <button class="subtract" onclick="putting(this)">−</button>
+
+      <button class="four" onclick="putting(this)">4</button>
+      <button class="five" onclick="putting(this)">5</button>
+      <button class="six" onclick="putting(this)">6</button>
+      <button class="add" onclick="putting(this)">+</button>
+
+      <button class="one" onclick="putting(this)">1</button>
+      <button class="two" onclick="putting(this)">2</button>
+      <button class="three" onclick="putting(this)">3</button>
+      <button class="equal" onclick="calc()">=</button>
+
+      <button class="zero" onclick="putting(this)">0</button>
+      <button class="point" onclick="putting(this)">.</button>
+    </div>
+  </div>
+  <script src="simple_calc_script.js"></script>
+</body>
+</html>
